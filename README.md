@@ -18,4 +18,4 @@ leaseweb login
 # > Enter api key
 ```
 
-![Screenshot 2022-10-06 at 16 51 08](https://user-images.githubusercontent.com/20487980/194345478-c06fded0-9041-49b6-b5a5-24243d240134.png)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/20487980/194351845-1a18ca00-6f05-4f96-bfd3-221f8b5898d5.gif)
