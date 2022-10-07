@@ -16,14 +16,14 @@ func init() {
 
 var floatingIpCmd = &cobra.Command{
 	Use:   "floating-ip",
-	Short: "Manage your Floating IPs",
-	Long:  "Manage your Floating IPs",
+	Short: "Get information about your Floating Ips and manage them",
+	Long:  "Get information about your Floating Ips and manage them",
 }
 
 var floatingIplistCmd = &cobra.Command{
 	Use:   "list",
-	Short: "A Floating IP range is bound to a particular site or metro.",
-	Long:  "A Floating IP range is bound to a particular site or metro.",
+	Short: "Retrieve the list of Floating Ips",
+	Long:  "Retrieve the list of Floating Ips",
 	Run: func(cmd *cobra.Command, args []string) {
 		result, err := LSW.FloatingIpApi{}.ListRanges()
 		if err == nil {
@@ -39,8 +39,8 @@ var floatingIplistCmd = &cobra.Command{
 
 var floatingIpGetCmd = &cobra.Command{
 	Use:   "get",
-	Short: "Get information about a single server",
-	Long:  "Get information about a single server",
+	Short: "Retrieve details of Floating Ip",
+	Long:  "Retrieve details of Floating Ip",
 	Run: func(cmd *cobra.Command, args []string) {
 		ip, err := LSW.FloatingIpApi{}.GetRange(args[0])
 		if err != nil {

@@ -16,14 +16,14 @@ func init() {
 
 var invoiceCmd = &cobra.Command{
 	Use:   "invoice",
-	Short: "Get your invoice data",
-	Long:  "Get your invoice data",
+	Short: "Get information about your Invoices",
+	Long:  "Get information about your Invoices",
 }
 
 var invoiceListCmd = &cobra.Command{
 	Use:   "list",
-	Short: "An overview of all the invoices",
-	Long:  "An overview of all the invoices",
+	Short: "Retrieve the list of Invoices",
+	Long:  "Retrieve the list of Invoices",
 	Run: func(cmd *cobra.Command, args []string) {
 		result, err := LSW.InvoiceApi{}.List()
 		if err == nil {
@@ -40,8 +40,8 @@ var invoiceListCmd = &cobra.Command{
 
 var invoiceGetCmd = &cobra.Command{
 	Use:   "get",
-	Short: "An overview of single invoice",
-	Long:  "An overview of single invoice",
+	Short: "Retrieve the details of an Invoice",
+	Long:  "Retrieve the details of an Invoice",
 	Run: func(cmd *cobra.Command, args []string) {
 		invoice, err := LSW.InvoiceApi{}.Get(args[0])
 		if err == nil {
@@ -58,8 +58,6 @@ var invoiceGetCmd = &cobra.Command{
 			t.AddLine("Due date:", dueDate.Format("2006-01-02"))
 			t.AddLine("Date:", date.Format("2006-01-02"))
 			t.AddLine("Is partial payment allowed:", invoice.IsPartialPaymentAllowed)
-			// t.AddLine("Credits:", len(invoice.Credits))
-			// t.AddLine("Lines:", len(invoice.Lines))
 			t.Print()
 		}
 	},

@@ -9,8 +9,12 @@ import (
 
 var apiKeyPath string = "/.lsw"
 
-func Authenticate() {
+func Login() {
 	LSW.InitLeasewebClient(ReadApiKey())
+}
+
+func Logout() {
+	WriteApiKey("")
 }
 
 func ReadApiKey() string {

@@ -18,14 +18,14 @@ func init() {
 
 var virtualServerCmd = &cobra.Command{
 	Use:   "virtual-server",
-	Short: "Control your virtual servers",
-	Long:  "Control your virtual servers",
+	Short: "Get information about your Virtual Servers and manage them",
+	Long:  "Get information about your Virtual Servers and manage them",
 }
 
 var virtualServerlistCmd = &cobra.Command{
 	Use:   "list",
-	Short: "List your virtual servers",
-	Long:  "List your virtual servers",
+	Short: "Retrieve the list of Virtual Servers",
+	Long:  "Retrieve the list of Virtual Servers",
 	Run: func(cmd *cobra.Command, args []string) {
 		result, err := LSW.VirtualServerApi{}.List()
 		if err == nil {
@@ -41,8 +41,8 @@ var virtualServerlistCmd = &cobra.Command{
 
 var virtualServerGetCmd = &cobra.Command{
 	Use:   "get",
-	Short: "Get information about a single virtual server",
-	Long:  "Get information about a single virtual server",
+	Short: "Retrieve details of Virtual Server",
+	Long:  "Retrieve details of Virtual Server",
 	Run: func(cmd *cobra.Command, args []string) {
 		server, err := LSW.VirtualServerApi{}.Get(args[0])
 		if err != nil {
@@ -62,8 +62,8 @@ var virtualServerGetCmd = &cobra.Command{
 
 var virtualServerPowerOnCmd = &cobra.Command{
 	Use:   "power-on",
-	Short: "Power on the given virtual server",
-	Long:  "Power on the given virtual server",
+	Short: "Power-on a Virtual Server",
+	Long:  "Power-on a Virtual Server",
 	Run: func(cmd *cobra.Command, args []string) {
 		_, err := LSW.VirtualServerApi{}.PowerOff(args[0])
 		if err != nil {
@@ -76,8 +76,8 @@ var virtualServerPowerOnCmd = &cobra.Command{
 
 var virtualServerPowerOffCmd = &cobra.Command{
 	Use:   "power-off",
-	Short: "Power off the given virtual server",
-	Long:  "Power off the given virtual server",
+	Short: "Power-off a Virtual Server",
+	Long:  "Power-off a Virtual Server",
 	Run: func(cmd *cobra.Command, args []string) {
 		_, err := LSW.VirtualServerApi{}.PowerOn(args[0])
 		if err != nil {

@@ -18,14 +18,14 @@ func init() {
 
 var dedicatedServerCmd = &cobra.Command{
 	Use:   "dedicated-server",
-	Short: "Manage your dedicated servers",
-	Long:  "Manage your dedicated servers",
+	Short: "Get information about your Dedicated Servers and manage them",
+	Long:  "Get information about your Dedicated Servers and manage them",
 }
 
 var dedicatedServerlistCmd = &cobra.Command{
 	Use:   "list",
-	Short: "List your dedicated servers",
-	Long:  "List your dedicated servers",
+	Short: "Retrieve the list of Dedicated Servers",
+	Long:  "Retrieve the list of Dedicated Servers",
 	Run: func(cmd *cobra.Command, args []string) {
 		result, err := LSW.DedicatedServerApi{}.List()
 		if err == nil {
@@ -41,8 +41,8 @@ var dedicatedServerlistCmd = &cobra.Command{
 
 var dedicatedServerGetCmd = &cobra.Command{
 	Use:   "get",
-	Short: "Get information about a single server",
-	Long:  "Get information about a single server",
+	Short: "Retrieve details of Dedicated Server",
+	Long:  "Retrieve details of Dedicated Server",
 	Run: func(cmd *cobra.Command, args []string) {
 		server, err := LSW.DedicatedServerApi{}.Get(args[0])
 		if err != nil {
@@ -63,8 +63,8 @@ var dedicatedServerGetCmd = &cobra.Command{
 
 var dedicatedServerPowerOnCmd = &cobra.Command{
 	Use:   "power-on",
-	Short: "Power on the given server",
-	Long:  "Power on the given server",
+	Short: "Power-on a Dedicated Server",
+	Long:  "Power-on a Dedicated Server",
 	Run: func(cmd *cobra.Command, args []string) {
 		err := LSW.DedicatedServerApi{}.PowerOnServer(args[0])
 		if err != nil {
@@ -77,8 +77,8 @@ var dedicatedServerPowerOnCmd = &cobra.Command{
 
 var dedicatedServerPowerOffCmd = &cobra.Command{
 	Use:   "power-off",
-	Short: "Power off the given server",
-	Long:  "Power off the given server",
+	Short: "Power-off a Dedicated Server",
+	Long:  "Power-off a Dedicated Server",
 	Run: func(cmd *cobra.Command, args []string) {
 		err := LSW.DedicatedServerApi{}.PowerOffServer(args[0])
 		if err != nil {

@@ -16,14 +16,14 @@ func init() {
 
 var customerCmd = &cobra.Command{
 	Use:   "customer",
-	Short: "View your account information and manage your contacts",
-	Long:  "View your account information and manage your contacts",
+	Short: "Get information about your Account and manage your Contacts",
+	Long:  "Get information about your Account and manage your Contacts",
 }
 
 var customerContactListCmd = &cobra.Command{
 	Use:   "list-contacts",
-	Short: "An overview of all the contacts",
-	Long:  "An overview of all the contacts",
+	Short: "Retrieve the list of Contacts",
+	Long:  "Retrieve the list of Contacts",
 	Run: func(cmd *cobra.Command, args []string) {
 		result, err := LSW.CustomerAccountApi{}.ListContacts()
 		if err == nil {
@@ -39,8 +39,8 @@ var customerContactListCmd = &cobra.Command{
 
 var customerGetCmd = &cobra.Command{
 	Use:   "me",
-	Short: "Get your account details",
-	Long:  "Get your account details",
+	Short: "Retrieve details of logged in Account",
+	Long:  "Retrieve details of logged in Account",
 	Run: func(cmd *cobra.Command, args []string) {
 		customerAccount, err := LSW.CustomerAccountApi{}.Get()
 		if err == nil {

@@ -22,8 +22,8 @@ var ipManagementCmd = &cobra.Command{
 
 var ipManagementlistCmd = &cobra.Command{
 	Use:   "list",
-	Short: "List your Ips",
-	Long:  "List your Ips",
+	Short: "Retrieve the list of Assigned IPs",
+	Long:  "Retrieve the list of Assigned IPs",
 	Run: func(cmd *cobra.Command, args []string) {
 		result, err := LSW.IpManagementApi{}.List()
 		if err == nil {
@@ -39,8 +39,8 @@ var ipManagementlistCmd = &cobra.Command{
 
 var ipManagementGetCmd = &cobra.Command{
 	Use:   "get",
-	Short: "Get information about a single Ip",
-	Long:  "Get information about a single Ip",
+	Short: "Retrieve details of Assigned IP",
+	Long:  "Retrieve details of Assigned IP",
 	Run: func(cmd *cobra.Command, args []string) {
 		ip, err := LSW.IpManagementApi{}.Get(args[0])
 		if err != nil {
