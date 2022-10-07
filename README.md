@@ -4,7 +4,7 @@ This package provides a cli for Leaseweb's REST API.
 
 ### Installation
 ```bash
-git clone git@github.com:majidkarimizadeh/leaseweb-cli.git
+git clone git@github.com:LeaseWeb/leaseweb-cli.git
 cd leaseweb-cli
 go build -o leaseweb
 ```
