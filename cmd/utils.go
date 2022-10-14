@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	LSW "github.com/majidkarimizadeh/leaseweb-go-sdk"
+	LSW "github.com/LeaseWeb/leaseweb-go-sdk"
 )
 
 var apiKeyPath string = "/.lsw"

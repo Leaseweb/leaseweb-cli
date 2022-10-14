@@ -3,8 +3,8 @@ package cmd
 import (
 	"strings"
 
+	LSW "github.com/LeaseWeb/leaseweb-go-sdk"
 	"github.com/cheynewallace/tabby"
-	LSW "github.com/majidkarimizadeh/leaseweb-go-sdk"
 	"github.com/spf13/cobra"
 )
 
