@@ -1,11 +1,11 @@
+github.com/LeaseWeb/leaseweb-go-sdk v0.0.0-20221014124609-cf69ef9285e8 h1:zvdFmSbv8wzTQKTPLdFmqkqATDZkHUX7E/4w1fIApSw=
+github.com/LeaseWeb/leaseweb-go-sdk v0.0.0-20221014124609-cf69ef9285e8/go.mod h1:vBWxy9DP2ARqrav9LO6gEN4BhIckENXvktVVMtFmQEw=
 github.com/cheynewallace/tabby v1.1.1 h1:JvUR8waht4Y0S3JF17G6Vhyt+FRhnqVCkk8l4YrOU54=
 github.com/cheynewallace/tabby v1.1.1/go.mod h1:Pba/6cUL8uYqvOc9RkyvFbHGrQ9wShyrn6/S/1OYVys=
 github.com/cpuguy83/go-md2man/v2 v2.0.2/go.mod h1:tgQtvFlXSQOSOSIRvRPT7W67SCa46tRHOmNcaadrF8o=
 github.com/inconshreveable/mousetrap v1.0.0/go.mod h1:PxqpIevigyE2G7u3NXJIT2ANytuPF1OarO4DADm73n8=
 github.com/inconshreveable/mousetrap v1.0.1 h1:U3uMjPSQEBMNp1lFxmllqCPM6P5u/Xq7Pgzkat/bFNc=
 github.com/inconshreveable/mousetrap v1.0.1/go.mod h1:vpF70FUmC8bwa3OWnCshd2FqLfsEA9PFc4w1p2J65bw=
-github.com/majidkarimizadeh/leaseweb-go-sdk v1.3.0 h1:trIbapcHHePd9zUBfxuIJ234ZyKNP7V0Od9I+Il78o0=
-github.com/majidkarimizadeh/leaseweb-go-sdk v1.3.0/go.mod h1:BPfWj9Ri4tLpR6Les/j8MnY/4K6CYCYqE5I9BlMOtzw=
 github.com/mattn/go-colorable v0.1.13 h1:fFA4WZxdEF4tXPZVKMLwD8oUnCTTo08duU7wxecdEvA=
 github.com/mattn/go-colorable v0.1.13/go.mod h1:7S9/ev0klgBDR4GtXTXX8a3vIGJpMovkB8vQcUbaXHg=
 github.com/mattn/go-isatty v0.0.16 h1:bq3VjFmv/sOjHtdEhmkEV4x1AJtvUvOJ2PFAZ5+peKQ=

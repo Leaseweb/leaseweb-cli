@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/majidkarimizadeh/leaseweb-cli/cmd"
+	"github.com/LeaseWeb/leaseweb-cli/cmd"
 )
 
 func main() {

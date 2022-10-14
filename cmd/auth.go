@@ -5,7 +5,7 @@ import (
 	"os"
 	"syscall"
 
-	LSW "github.com/majidkarimizadeh/leaseweb-go-sdk"
+	LSW "github.com/LeaseWeb/leaseweb-go-sdk"
 	"github.com/spf13/cobra"
 	"golang.org/x/term"
 )
